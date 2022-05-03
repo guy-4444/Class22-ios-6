@@ -13,6 +13,8 @@
 		8C96179928202819002F0265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C96179728202819002F0265 /* Main.storyboard */; };
 		8C96179B2820281A002F0265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C96179A2820281A002F0265 /* Assets.xcassets */; };
 		8C96179E2820281A002F0265 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C96179C2820281A002F0265 /* LaunchScreen.storyboard */; };
+		8C9617A628202866002F0265 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9617A528202866002F0265 /* Car.swift */; };
+		8C9617A828202B62002F0265 /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9617A728202B62002F0265 /* CarCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8C96179A2820281A002F0265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C96179D2820281A002F0265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C96179F2820281A002F0265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C9617A528202866002F0265 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		8C9617A728202B62002F0265 /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				8C96179A2820281A002F0265 /* Assets.xcassets */,
 				8C96179C2820281A002F0265 /* LaunchScreen.storyboard */,
 				8C96179F2820281A002F0265 /* Info.plist */,
+				8C9617A528202866002F0265 /* Car.swift */,
+				8C9617A728202B62002F0265 /* CarCell.swift */,
 			);
 			path = "Class22-ios-6";
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			files = (
 				8C96179628202819002F0265 /* ViewController.swift in Sources */,
 				8C96179228202819002F0265 /* AppDelegate.swift in Sources */,
+				8C9617A628202866002F0265 /* Car.swift in Sources */,
+				8C9617A828202B62002F0265 /* CarCell.swift in Sources */,
 				8C96179428202819002F0265 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
