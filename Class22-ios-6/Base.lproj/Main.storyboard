@@ -59,38 +59,52 @@
                                                             </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1g8-QS-12O">
-                                                            <rect key="frame" x="130" y="0.0" width="236" height="100.5"/>
+                                                            <rect key="frame" x="130" y="0.0" width="216" height="100.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ozj-mn-0GR">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="236" height="46.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="216" height="46.5"/>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edP-Fr-Tzi">
-                                                                    <rect key="frame" x="0.0" y="54.5" width="236" height="46"/>
+                                                                    <rect key="frame" x="0.0" y="54.5" width="216" height="46"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" name="sub_title_text"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart_disabled" translatesAutoresizingMaskIntoConstraints="NO" id="jXm-Gs-pXf">
-                                                            <rect key="frame" x="376" y="0.0" width="30" height="100.5"/>
+                                                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNM-01-YmG">
+                                                            <rect key="frame" x="356" y="30.5" width="40" height="40"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="30" id="sLy-vl-9yy"/>
+                                                                <constraint firstAttribute="height" constant="40" id="70E-cU-SD8"/>
+                                                                <constraint firstAttribute="width" constant="40" id="tsW-uk-zYa"/>
                                                             </constraints>
-                                                        </imageView>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" title="Button" image="heart_disabled"/>
+                                                            <connections>
+                                                                <action selector="likedClicked:" destination="sgi-m0-JQB" eventType="touchUpInside" id="ncp-PC-Zha"/>
+                                                            </connections>
+                                                        </button>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jrO-YD-Mn8">
+                                                            <rect key="frame" x="406" y="0.0" width="0.0" height="100.5"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" id="LSl-O3-Oxg"/>
+                                                            </constraints>
+                                                        </view>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="1g8-QS-12O" firstAttribute="top" secondItem="bHa-1A-0HS" secondAttribute="top" id="3TB-PX-bNF"/>
                                                         <constraint firstItem="CNW-m4-Wxn" firstAttribute="leading" secondItem="bHa-1A-0HS" secondAttribute="leading" id="7hj-ww-Y9I"/>
-                                                        <constraint firstAttribute="bottom" secondItem="jXm-Gs-pXf" secondAttribute="bottom" id="F70-8d-Sf2"/>
-                                                        <constraint firstItem="jXm-Gs-pXf" firstAttribute="top" secondItem="bHa-1A-0HS" secondAttribute="top" id="GAG-oa-wGH"/>
+                                                        <constraint firstItem="jrO-YD-Mn8" firstAttribute="top" secondItem="bHa-1A-0HS" secondAttribute="top" id="NMC-79-cWL"/>
                                                         <constraint firstItem="CNW-m4-Wxn" firstAttribute="top" secondItem="bHa-1A-0HS" secondAttribute="top" id="SWx-B7-yfS"/>
                                                         <constraint firstAttribute="height" constant="100" id="X5k-GR-Mj6"/>
+                                                        <constraint firstAttribute="bottom" secondItem="jrO-YD-Mn8" secondAttribute="bottom" id="aD0-A3-YFQ"/>
                                                         <constraint firstAttribute="bottom" secondItem="CNW-m4-Wxn" secondAttribute="bottom" id="ctI-Eg-RjG"/>
                                                         <constraint firstAttribute="bottom" secondItem="1g8-QS-12O" secondAttribute="bottom" id="iCR-N9-SZe"/>
+                                                        <constraint firstItem="oNM-01-YmG" firstAttribute="centerY" secondItem="bHa-1A-0HS" secondAttribute="centerY" id="rtV-1E-ZaQ"/>
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
@@ -102,7 +116,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="car_IMG_heart" destination="jXm-Gs-pXf" id="aGc-KH-AlH"/>
+                                            <outlet property="car_BTN_heart" destination="oNM-01-YmG" id="24D-NR-2pm"/>
                                             <outlet property="car_LBL_desc" destination="edP-Fr-Tzi" id="OEU-9W-ntR"/>
                                             <outlet property="car_LBL_name" destination="Ozj-mn-0GR" id="5Bf-HU-bgx"/>
                                         </connections>
